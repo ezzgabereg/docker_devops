@@ -1,6 +1,24 @@
 Update & Upgrade ubuntu
-
-```bash
 sudo apt update
 sudo apt upgrade
-```
+
+Download Packge requst for Docker
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+
+Download Docker Repo
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg sudo | apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+sudo apt update
+sudo apt upgrade
+
+Install Docker
+sudo apt install docker-ce
+
+Show Status Docker
+sudo systemctl status docker
+
+Enable Docker
+sudo systemctl enable docker
+
+Show Docker Version
+sudo docker version
