@@ -1,1 +1,6 @@
-.
+Update & Upgrade ubuntu
+
+```bash
+sudo apt update
+sudo apt upgrade
+```
